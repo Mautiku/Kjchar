@@ -1,0 +1,103 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("KJ CHARACTER MOVESET PLACE", "GrapeTheme")
+local Tab = Window:NewTab("Ultimate")
+local Section = Tab:NewSection("KJ")
+Section:NewButton("Ultimate instantly", "kjkjkj", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local args = {
+    [1] = 1.2820000000000005
+}
+
+game:GetService("ReplicatedStorage").Remotes.kj.release:FireServer(unpack(args))
+
+
+end)
+
+Section:NewButton("KJ drop kick 20-20-20", "Xd", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+game:GetService("ReplicatedStorage").KJ.Remote.DropKick:FireServer()
+
+
+end)
+
+Section:NewButton("Stotic bomb", "kj", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+game:GetService("ReplicatedStorage").KJ.Remote.StoicBomb:FireServer()
+
+end)
+local Section = Tab:NewSection("GOJO")
+Section:NewButton("Ultimate instanly", "erm", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local args = {
+    [1] = 1.4680000000000006
+}
+
+game:GetService("ReplicatedStorage").Remotes.gojo.release:FireServer(unpack(args))
+
+end)
+
+local Tab = Window:NewTab("Character")
+local Section = Tab:NewSection("Gamepass characters")
+Section:NewButton("KJ", "KJ", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local args = {
+    [1] = "KJ"
+}
+
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Change Character").ChangeCharacter:FireServer(unpack(args))
+
+end)
+Section:NewButton("GOJO", "GOJO", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local args = {
+    [1] = "GOJO"
+}
+
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Change Character").ChangeCharacter:FireServer(unpack(args))
+
+
+end)
+Section:NewButton("TOJI", "toji", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local args = {
+    [1] = "TOJI"
+}
+
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Change Character").ChangeCharacter:FireServer(unpack(args))
+
+end)
